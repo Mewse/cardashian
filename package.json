@@ -1,0 +1,26 @@
+{
+  "name": "cardashian",
+  "version": "1.0.0",
+  "description": "Car Dash simulator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mewse/cardashian.git"
+  },
+  "keywords": [
+    "Car",
+    "Dash"
+  ],
+  "author": "Matt Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mewse/cardashian/issues"
+  },
+  "homepage": "https://github.com/Mewse/cardashian#readme",
+  "dependencies": {
+    "konva": "^4.0.3"
+  }
+}

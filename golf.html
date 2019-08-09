@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<script src="https://unpkg.com/konva@4.0.0/konva.min.js"></script>
+	</head>
+	<body>
+		<div id="container"></div>
+   	<script>
+			// first we need to create a stage
+			var stage = new Konva.Stage({
+				container: 'container',   // id of container <div>
+				width: 700,
+				height: 500
+			});
+
+			// then create layer
+			var layer = new Konva.Layer();
+
+			// create our shape
+			var arc = new Konva.Arc({
+			  x: stage.width() / 2,
+			  y: stage.height() / 2,
+			  innerRadius: 65,
+			  outerRadius: 70,
+			  angle: 270,
+			  fill: 'yellow',
+			  stroke: 'black',
+		  	  strokeWidth: 2
+		        });
+			arc.rotate(135);
+			// add the shape to the layer
+
+			var arc2 = new Konva.Arc({
+			  x: stage.width() / 2 + 200,
+			  y: stage.height() / 2,
+			  innerRadius: 65,
+			  outerRadius: 70,
+			  angle: 270,
+			  fill: 'yellow',
+			  stroke: 'black',
+		  	  strokeWidth: 2
+		        });
+			arc2.rotate(135);
+
+			layer.add(arc);
+			layer.add(arc2);
+
+			// add the layer to the stage
+			stage.add(layer);
+
+			// draw the image
+			layer.draw();
+		</script>
+	</body>
+</html>
